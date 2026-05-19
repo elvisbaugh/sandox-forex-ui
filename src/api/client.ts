@@ -9,7 +9,7 @@ import type {
   CurrencyPair,
 } from './types';
 
-const API_BASE = (import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:5140').replace(/\/$/, '');
+const API_BASE = 'https://sandox-forex.azurewebsites.net';
 
 async function http<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`${API_BASE}${path}`, {

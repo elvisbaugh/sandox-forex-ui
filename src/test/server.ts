@@ -2,7 +2,7 @@ import { http, HttpResponse } from 'msw';
 import { setupServer } from 'msw/node';
 import type { AccountSummaryDto, OrderDto, PositionDto, RateDto, TradeDto, PlaceOrderRequest } from '../api/types';
 
-const API = 'http://localhost:5140';
+const API = 'https://sandox-forex.azurewebsites.net';
 
 interface State {
   orders: OrderDto[];
